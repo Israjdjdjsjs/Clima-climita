@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima en tiempo real</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>🌦️ Clima en tiempo real</h1>
+      <p class="subtitle">Consulta el clima actual de tu ubicación.</p>
+
+      <button id="locateBtn">Usar mi ubicación</button>
+
+      <section id="weather" class="hidden" aria-live="polite">
+        <h2 id="placeName">Tu ubicación</h2>
+        <p><strong>Temperatura:</strong> <span id="temp">-</span> °C</p>
+        <p><strong>Sensación térmica:</strong> <span id="feelsLike">-</span> °C</p>
+        <p><strong>Viento:</strong> <span id="wind">-</span> km/h</p>
+        <p><strong>Estado:</strong> <span id="state">-</span></p>
+        <p><strong>Última actualización:</strong> <span id="updatedAt">-</span></p>
+      </section>
+
+      <p id="status" class="status">Pulsa el botón para comenzar.</p>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
